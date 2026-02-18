@@ -1,0 +1,50 @@
+{
+  "name": "robun",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "dev": "bun --watch run src/index.ts",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit",
+    "lint": "biome check src/",
+    "build": "bun build src/index.ts --outdir dist --target bun"
+  },
+  "bin": {
+    "robun": "src/index.ts"
+  },
+  "dependencies": {
+    "@larksuiteoapi/node-sdk": "^1.0",
+    "@modelcontextprotocol/sdk": "^1.0",
+    "@mozilla/readability": "^0.5",
+    "@msgpack/msgpack": "^3.0",
+    "@slack/socket-mode": "^2.0",
+    "@slack/web-api": "^7.0",
+    "@whiskeysockets/baileys": "7.0.0-rc.9",
+    "chalk": "^5.0",
+    "cli-table3": "^0.6",
+    "cron-parser": "^5.0",
+    "grammy": "^1.30",
+    "gray-matter": "^4.0",
+    "hono": "^4.0",
+    "imapflow": "^1.0",
+    "jsonrepair": "^3.10",
+    "linkedom": "^0.18",
+    "mailparser": "^3.9.3",
+    "nodemailer": "^6.9",
+    "pino": "^9.0",
+    "slackify-markdown": "^4.0",
+    "socket.io-client": "^4.8",
+    "ws": "^8.18",
+    "zod": "^3.23",
+    "zod-to-json-schema": "^3.23"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9",
+    "@types/bun": "^1.0",
+    "@types/mailparser": "^3.4.6",
+    "@types/nodemailer": "^7.0.10",
+    "@types/ws": "^8.5",
+    "typescript": "^5.5"
+  }
+}
